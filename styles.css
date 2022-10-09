@@ -1,0 +1,117 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font-color: #4A494B;
+    --highlight-color: #694D7F;
+    --background: rgb(227, 227, 227);
+}
+
+h1,h2,h3,h4,h5,h6, p{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-font-color);
+    background-color: var(--background);
+}
+
+#header{
+    background-image: url(/assets/music-gb6276bd5d_1920.jpg);
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar{
+    position:absolute;
+    width: 30%;
+    height: 50px;
+    right: 10%;
+    top: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+}
+
+
+#title_container{
+    position: absolute;
+    width: 35%;
+    top: 45%;
+    right:10%;
+}
+
+#title_container h2{
+    font-size: 48px;
+}
+
+#title_container h1{
+    font-size: 70px;
+    color: var(--highlight-color);
+}
+
+
+#experience{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--highlight-color);
+}
+
+
+
+
+#exp{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 38%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+#experience-txt{
+    font-size: 55px;
+    line-height: 2em;
+    color: var(--background);
+
+}
+
+
+.experience-img{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    right:0;
+    clip-path: polygon(40% 0,100% 0, 100% 100%,0 100%);
+}
+
+#features{
+    width: 100vw;
+    height: 100vh;
+}
