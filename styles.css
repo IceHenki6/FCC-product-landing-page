@@ -31,13 +31,34 @@ body{
 }
 
 #header{
-    background-image: url(https://pixabay.com/get/g0d9065609fdf4dcbc873be8964c639033deb3e599a85a2843551be02ef5bd9fbe7597931ca2c0652c0dbc6f7e1912db6a581926fcdec2ad40012404ae119aed69f70a132df57b8675456b3b085e6e693_1920.jpg);
-    /* Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/snowboard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Snowboard_powder_day.jpg/2560px-Snowboard_powder_day.jpg);
+   
   
     background-repeat: no-repeat;
-
+    background-position: 40% 40%;
     width: 100%;
     height: 100vh;
+}
+
+#header-img{
+    position: absolute;
+    left: 10%;
+
+    height: 80%;
+}
+
+#img-caption{
+    position: absolute;
+
+    right: 2%;
+    bottom: 1%;
+    color: var(--background);
+    font-size: 15px;
+}
+
+#img-caption a{
+    color: var(--background);
+    font-weight: 700;
 }
 
 #navbar{
@@ -68,7 +89,7 @@ body{
     position: absolute;
     width: 35%;
     top: 45%;
-    right:10%;
+    left:10%;
 }
 
 #title_container h2{
@@ -246,7 +267,7 @@ body{
     font-size: 20px;
 }
 
-#form-button{
+#submit{
     margin-top: 3em;
     width: 60%;
     border-radius: 10px;
@@ -259,11 +280,14 @@ body{
     font-weight: 700;
 }
 
-#form-button:hover{
+#submit:hover{
     background-color: #37b1e6;
     cursor: pointer;
 }
 
+form{
+    color: var(--highlight-color);
+}
 
 @media only screen and (max-width: 1024px){
     #header{
@@ -320,5 +344,82 @@ body{
 
     #form-container{
         width: 70vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    #navbar ul{
+        font-size: 20px;
+        gap: 1em;
+    }
+
+    #header{
+        background-position: 60% 70%;
+    }
+
+    #title_container{
+        width: 70vw;
+        top: 40%;
+    }
+    #title_container h2{
+        font-size: 30px;
+    }
+
+    #title_container h1{
+        font-size: 40px;
+    }
+
+    #experience-txt{
+        font-size: 20px;
+        padding-left: 5%;
+    }
+
+    .experience-img{
+        position: absolute;
+        clip-path: none;
+        width: 50%;
+        right: 0;
+    }
+
+    #features{
+        padding-top: 50%;
+    }
+
+    #features-title{
+        font-size: 40px;
+    }
+
+    .card__title{
+        font-size: 25px;
+    }
+
+    .card__content{
+        font-size: 20px;
+    }
+
+    .card{
+        height: 55vh;
+        width: 80%;
+    }
+
+    #product-video__title{
+        font-size: 20px;
+    }
+
+    #video{
+        width: 90%;
+    }
+
+    #form-container{
+        width: 90%;
+    }
+
+    #form-title{
+        font-size: 20px;
+    }
+
+    #img-caption{
+        font-size: 8px;
     }
 }
