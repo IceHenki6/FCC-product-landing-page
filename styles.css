@@ -61,7 +61,7 @@ body{
     font-weight: 700;
 }
 
-#navbar{
+#nav-bar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -75,7 +75,7 @@ body{
     z-index: 1;
 }
 
-#navbar ul{
+#nav-bar ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -349,7 +349,7 @@ form{
 
 
 @media only screen and (max-width: 600px){
-    #navbar ul{
+    #nav-bar ul{
         font-size: 20px;
         gap: 1em;
     }
